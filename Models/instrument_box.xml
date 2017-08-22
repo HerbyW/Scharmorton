@@ -1,0 +1,724 @@
+<?xml version="1.0"?>
+<!--
+  Scharmorton 3d instrument box.
+  Copyright (C) 2016 Herbert Wagner
+  This file is licensed under the GPL license version 2 or later.
+-->
+<PropertyList>
+
+ <path>instrument_box3.ac</path>
+
+ <offsets>
+  <!-- x/y/z == back/right/up -->  <heading-deg>270</heading-deg>
+  <x-m> 0.0 </x-m>
+  <y-m> 0.0 </y-m>
+  <z-m> -0.120 </z-m>
+ </offsets>
+ 
+ <animation>
+        <type>material</type>
+         <object-name>Cube.001</object-name>         
+        <emission>
+            <factor-prop>controls/switches/gauge-light</factor-prop>
+            <red>0.15</red>
+            <green>0.15</green>
+            <blue>0.15</blue>
+        </emission>        
+    </animation>
+ 
+
+ <!-- Clock -->
+
+ <model>
+  <name>Clock</name>
+  <path>Aircraft/Scharmorton/Models/instruments/achs-2/achs-2.xml</path>
+  <offsets>
+   <heading-deg>90</heading-deg>
+   <x-m>  0.25 </x-m>
+   <y-m>  0.055 </y-m>
+   <z-m>  0.155 </z-m>
+  </offsets>
+ </model>
+ 
+ <model>
+  <name>stopClock</name>
+  <path>Aircraft/Scharmorton/Models/instruments/achs-2/timeset.xml</path>
+  <offsets>
+   <heading-deg>90</heading-deg>
+   <x-m>  0.25 </x-m>
+   <y-m>  0.0501 </y-m>
+   <z-m>  0.155 </z-m>
+  </offsets>
+ </model>
+ 
+ <!-- Outside-Temp -->
+
+ <model>
+  <name>tnv-15</name>
+  <path>Aircraft/Scharmorton/Models/instruments/tnv-15/tnv-15.xml</path>
+  <offsets>
+   <heading-deg>90</heading-deg>
+   <x-m>  0.25 </x-m>
+   <y-m>  0.055 </y-m>
+   <z-m>  0.083 </z-m>
+  </offsets>
+ </model>
+
+ <!-- Altimeter -->
+ 
+ <model>
+  <name>Altimeter-m</name>
+  <path>Aircraft/Scharmorton/Models/instruments/uvid-15/uvid-15-m.xml</path>
+  <offsets>
+   <heading-deg>90</heading-deg>
+   <x-m> -0.015 </x-m>
+   <y-m>  0.055 </y-m>
+   <z-m>  0.135 </z-m>
+  </offsets>
+ </model>
+ 
+ <model>
+  <name>Altimeter-ft</name>
+  <path>Aircraft/Scharmorton/Models/instruments/uvid-15/uvid-15-ft.xml</path>
+  <offsets>
+   <heading-deg>90</heading-deg>
+   <x-m> -0.115 </x-m>
+   <y-m>  0.055 </y-m>
+   <z-m>  0.135 </z-m>
+  </offsets>
+ </model>
+ 
+ <!-- Altimeter setting-->
+ 
+ <model>
+  <name>Set Hight</name>
+  <path>Aircraft/Scharmorton/Models/instruments/alt-set/alt-set.xml</path>
+  <offsets>
+   <heading-deg>90</heading-deg>
+   <x-m>  0.15 </x-m>
+   <y-m>  0.0501 </y-m>
+   <z-m>  -0.035 </z-m>
+  </offsets>
+ </model>
+
+ <!-- Vertical Indicators -->
+ 
+ <model>
+  <name>VSI30</name>
+  <path>Aircraft/Scharmorton/Models/instruments/var/var-30.xml</path>
+  <offsets>
+   <heading-deg>90</heading-deg>
+   <x-m>  0.17 </x-m>
+   <y-m>  0.0501 </y-m>
+   <z-m>  0.15 </z-m>
+  </offsets>
+ </model>
+ 
+ <model>
+  <name>VSI75</name>
+  <path>Aircraft/Scharmorton/Models/instruments/var/var-75.xml</path>
+  <offsets>
+   <heading-deg>90</heading-deg>
+   <x-m>  0.17 </x-m>
+   <y-m>  0.0501 </y-m>
+   <z-m>  0.05 </z-m>
+  </offsets>
+ </model>
+ 
+ <!-- Orientation Compass -->
+ 
+ <model>
+  <name>GasValve</name>
+  <path>Aircraft/Scharmorton/Models/instruments/ush/ush.xml</path>
+  <offsets>
+   <heading-deg>90</heading-deg>
+   <x-m>  -0.057 </x-m>
+   <y-m>  0.0501 </y-m>
+   <z-m>  0.023 </z-m>
+  </offsets>
+ </model>
+ 
+ <!-- Speed Indicator -->
+ 
+ <model>
+  <name>SpeedInd</name>
+  <path>Aircraft/Scharmorton/Models/instruments/speed_ind/speed_ind.xml</path>
+  <offsets>
+   <heading-deg>270.0</heading-deg>
+   <x-m>  -0.23 </x-m>
+   <y-m>  0.055 </y-m>
+   <z-m>  0.139 </z-m>
+  </offsets>
+ </model>
+ 
+ <!-- Ground elevation -->
+ 
+ <model>
+  <name>rv-5m</name>
+  <path>Aircraft/Scharmorton/Models/instruments/rv-5m/rv-5m.xml</path>
+  <offsets>
+   <heading-deg>90.0</heading-deg>
+   <x-m>  -0.23 </x-m>
+   <y-m>  0.055 </y-m>
+   <z-m>  0.033 </z-m>
+  </offsets>
+ </model>
+
+<!-- Switches -->
+
+<model>
+  <name>gaugelights</name>
+  <path>Aircraft/Scharmorton/Models/instruments/switch/gaugelights.xml</path>
+  <offsets>
+   <heading-deg>90</heading-deg>
+   <x-m>  0.025 </x-m>
+   <y-m>  0.0501 </y-m>
+   <z-m>  -0.07 </z-m>
+  </offsets>
+ </model>
+
+<model>
+  <name>Burner</name>
+  <path>Aircraft/Scharmorton/Models/instruments/switch/burner3.xml</path>
+  <offsets>
+   <heading-deg>90</heading-deg>
+   <x-m>  0.044 </x-m>
+   <y-m>  0.0501 </y-m>
+   <z-m>  0.16 </z-m>
+  </offsets>
+ </model>
+ 
+ <model>
+  <name>Burner2</name>
+  <path>Aircraft/Scharmorton/Models/instruments/switch/burner2.xml</path>
+  <offsets>
+   <heading-deg>90</heading-deg>
+   <x-m>  0.077 </x-m>
+   <y-m>  0.0501 </y-m>
+   <z-m>  0.16 </z-m>
+  </offsets>
+ </model>
+ 
+ <model>
+  <name>Burner3</name>
+  <path>Aircraft/Scharmorton/Models/instruments/switch/burner.xml</path>
+  <offsets>
+   <heading-deg>90</heading-deg>
+   <x-m>  0.11 </x-m>
+   <y-m>  0.0501 </y-m>
+   <z-m>  0.16 </z-m>
+  </offsets>
+ </model>
+ 
+ <model>
+  <path>Aircraft/Scharmorton/Models/instruments/lamps/red-burner3.xml</path>
+  <offsets>
+   <heading-deg>90</heading-deg>
+   <x-m>  0.032 </x-m>
+   <y-m>  0.045 </y-m>
+   <z-m>  0.172 </z-m>
+  </offsets>
+ </model>
+ 
+ <model>
+  <path>Aircraft/Scharmorton/Models/instruments/lamps/red-burner2.xml</path>
+  <offsets>
+   <heading-deg>90</heading-deg>
+   <x-m>  0.065 </x-m>
+   <y-m>  0.045 </y-m>
+   <z-m>  0.172 </z-m>
+  </offsets>
+ </model>
+ 
+ <model>
+  <path>Aircraft/Scharmorton/Models/instruments/lamps/red-burner.xml</path>
+  <offsets>
+   <heading-deg>90</heading-deg>
+   <x-m>  0.098 </x-m>
+   <y-m>  0.045 </y-m>
+   <z-m>  0.172 </z-m>
+  </offsets>
+ </model>
+ 
+ <model>
+  <name>fuel</name>
+  <path>Aircraft/Scharmorton/Models/instruments/propane/fuel.xml</path>
+  <offsets>
+   <heading-deg>90</heading-deg>
+   <x-m>  0.25 </x-m>
+   <y-m>  0.055 </y-m>
+   <z-m>  0.022 </z-m>
+  </offsets>
+ </model>
+ 
+ <model>
+  <name>anchor</name>
+  <path>Aircraft/Scharmorton/Models/instruments/switch/anchor.xml</path>
+  <offsets>
+   <heading-deg>90</heading-deg>
+   <x-m>  0.25 </x-m>
+   <y-m>  0.0501 </y-m>
+   <z-m>  -0.093 </z-m>
+  </offsets>
+ </model>
+ 
+ <model>
+  <path>Aircraft/Scharmorton/Models/instruments/lamps/red-anchor.xml</path>
+  <offsets>
+   <heading-deg>90</heading-deg>
+   <x-m>  0.228 </x-m>
+   <y-m>  0.045 </y-m>
+   <z-m>  -0.105 </z-m>
+  </offsets>
+ </model>
+ 
+ <model>
+  <path>Aircraft/Scharmorton/Models/instruments/lamps/red-anchor-sand.xml</path>
+  <offsets>
+   <heading-deg>90</heading-deg>
+   <x-m>  0.228 </x-m>
+   <y-m>  0.045 </y-m>
+   <z-m>  -0.085 </z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <name>blower</name>
+  <path>Aircraft/Scharmorton/Models/instruments/switch/blower.xml</path>
+  <offsets>
+   <heading-deg>90</heading-deg>
+   <x-m>  0.087 </x-m>
+   <y-m>  0.0501 </y-m>
+   <z-m>  0.077 </z-m>
+  </offsets>
+ </model>
+ 
+ <model>
+  <path>Aircraft/Scharmorton/Models/instruments/lamps/green-blower.xml</path>
+  <offsets>
+   <heading-deg>90</heading-deg>
+   <x-m>  0.065 </x-m>
+   <y-m>  0.045 </y-m>
+   <z-m>  0.065 </z-m>
+  </offsets>
+ </model>
+ 
+ <model>
+  <name>parachute-valve</name>
+  <path>Aircraft/Scharmorton/Models/instruments/switch/parachute-valve.xml</path>
+  <offsets>
+   <heading-deg>90</heading-deg>
+   <x-m>  0.087 </x-m>
+   <y-m>  0.0501 </y-m>
+   <z-m>  0.02 </z-m>
+  </offsets>
+ </model>
+ 
+ <model>
+  <path>Aircraft/Scharmorton/Models/instruments/lamps/green-parachute.xml</path>
+  <offsets>
+   <heading-deg>90</heading-deg>
+   <x-m>  0.065 </x-m>
+   <y-m>  0.045 </y-m>
+   <z-m>  0.008 </z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <name>ripvalve</name>
+  <path>Aircraft/Scharmorton/Models/instruments/switch/ripvalve.xml</path>
+  <offsets>
+   <heading-deg>90</heading-deg>
+   <x-m>  0.25 </x-m>
+   <y-m>  0.0501 </y-m>
+   <z-m>  -0.153 </z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <name>turnvalvel</name>
+  <path>Aircraft/Scharmorton/Models/instruments/switch/turnvalvel.xml</path>
+  <offsets>
+   <heading-deg>90</heading-deg>
+   <x-m>  0.035 </x-m>
+   <y-m>  0.0501 </y-m>
+   <z-m>  0.02 </z-m>
+  </offsets>
+ </model>
+
+
+ <model>
+  <name>turnvalver</name>
+  <path>Aircraft/Scharmorton/Models/instruments/switch/turnvalver.xml</path>
+  <offsets>
+   <heading-deg>90</heading-deg>
+   <x-m>  -0.145 </x-m>
+   <y-m>  0.0501 </y-m>
+   <z-m>  0.02 </z-m>
+  </offsets>
+ </model> 
+ 
+ <model>
+  <name>takeoffweight</name>
+  <path>Aircraft/Scharmorton/Models/instruments/switch/takeoffweight.xml</path>
+  <offsets>
+   <heading-deg>90</heading-deg>
+   <x-m>  0.135 </x-m>
+   <y-m>  0.0501 </y-m>
+   <z-m>  -0.155 </z-m>
+  </offsets>
+ </model>
+ 
+<!-- Buttons --> 
+ 
+ <model>
+  <name>signal</name>
+  <path>Aircraft/Scharmorton/Models/instruments/switch/signal-button.xml</path>
+  <offsets>
+   <heading-deg>90</heading-deg>
+   <x-m>  0.25 </x-m>
+   <y-m>  0.0501 </y-m>
+   <z-m>  -0.022 </z-m>
+  </offsets>
+ </model>
+ 
+ <model>
+  <name>button-1</name>
+  <path>Aircraft/Scharmorton/Models/instruments/switch/button-1.xml</path>
+  <offsets>
+   <heading-deg>90</heading-deg>
+   <x-m>  0.16 </x-m>
+   <y-m>  0.0501 </y-m>
+   <z-m>  -0.12 </z-m>
+  </offsets>
+ </model>
+ 
+ <model>
+  <path>Aircraft/Scharmorton/Models/instruments/lamps/red-temp.xml</path>
+  <offsets>
+   <heading-deg>90</heading-deg>
+   <x-m>  0.1612 </x-m>
+   <y-m>  0.044 </y-m>
+   <z-m>  -0.12 </z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <name>button-2</name>
+  <path>Aircraft/Scharmorton/Models/instruments/switch/button-2.xml</path>
+  <offsets>
+   <heading-deg>90</heading-deg>
+   <x-m>  0.11 </x-m>
+   <y-m>  0.0501 </y-m>
+   <z-m>  -0.12 </z-m>
+  </offsets>
+ </model>
+ 
+ <model>
+  <name>button-3</name>
+  <path>Aircraft/Scharmorton/Models/instruments/switch/button-3.xml</path>
+  <offsets>
+   <heading-deg>90</heading-deg>
+   <x-m>  0.07 </x-m>
+   <y-m>  0.0501 </y-m>
+   <z-m>  -0.12 </z-m>
+  </offsets>
+ </model>
+ 
+ 
+ 
+ <model>
+  <name>helium-in</name>
+  <path>Aircraft/Scharmorton/Models/instruments/switch/button-helium-in.xml</path>
+  <offsets>
+   <heading-deg>90</heading-deg>
+   <x-m>  0.108 </x-m>
+   <y-m>  0.0501 </y-m>
+   <z-m>  0.123 </z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <name>helium-out</name>
+  <path>Aircraft/Scharmorton/Models/instruments/switch/button-helium-out.xml</path>
+  <offsets>
+   <heading-deg>90</heading-deg>
+   <x-m>  0.066 </x-m>
+   <y-m>  0.0501 </y-m>
+   <z-m>  0.123 </z-m>
+  </offsets>
+ </model>
+ 
+ <!-- Autopilot -->
+
+<model>
+  <name>AP-orientation</name>
+  <path>Aircraft/Scharmorton/Models/instruments/switch/AP-orientation.xml</path>
+  <offsets>
+   <heading-deg>90</heading-deg>
+   <x-m>  -0.0 </x-m>
+   <y-m>  0.0501 </y-m>
+   <z-m>  -0.122 </z-m>
+  </offsets>
+ </model>
+ 
+ <model>
+  <path>Aircraft/Scharmorton/Models/instruments/lamps/green-drift.xml</path>
+  <offsets>
+   <heading-deg>90</heading-deg>
+   <x-m>  0.023 </x-m>
+   <y-m>  0.045 </y-m>
+   <z-m>  -0.122 </z-m>
+  </offsets>
+ </model>
+
+<model>
+  <name>AP-parachute</name>
+  <path>Aircraft/Scharmorton/Models/instruments/switch/AP-parachute.xml</path>
+  <offsets>
+   <heading-deg>90</heading-deg>
+   <x-m>  -0.065 </x-m>
+   <y-m>  0.0501 </y-m>
+   <z-m>  -0.122 </z-m>
+  </offsets>
+ </model>
+ 
+ <model>
+  <path>Aircraft/Scharmorton/Models/instruments/lamps/green-para.xml</path>
+  <offsets>
+   <heading-deg>90</heading-deg>
+   <x-m>  -0.042 </x-m>
+   <y-m>  0.045 </y-m>
+   <z-m>  -0.122 </z-m>
+  </offsets>
+ </model>
+  
+<model>
+  <name>AP-descend</name>
+  <path>Aircraft/Scharmorton/Models/instruments/switch/AP-descend.xml</path>
+  <offsets>
+   <heading-deg>90</heading-deg>
+   <x-m>  -0.13 </x-m>
+   <y-m>  0.0501 </y-m>
+   <z-m>  -0.122 </z-m>
+  </offsets>
+ </model>
+ 
+ <model>
+  <path>Aircraft/Scharmorton/Models/instruments/lamps/green-desc.xml</path>
+  <offsets>
+   <heading-deg>90</heading-deg>
+   <x-m>  -0.107 </x-m>
+   <y-m>  0.045 </y-m>
+   <z-m>  -0.122 </z-m>
+  </offsets>
+ </model>
+  
+<model>
+  <name>AP-altitude</name>
+  <path>Aircraft/Scharmorton/Models/instruments/switch/AP-altitude.xml</path>
+  <offsets>
+   <heading-deg>90</heading-deg>
+   <x-m>  -0.26 </x-m>
+   <y-m>  0.0501 </y-m>
+   <z-m>  -0.122 </z-m>
+  </offsets>
+ </model>
+ 
+ <model>
+  <path>Aircraft/Scharmorton/Models/instruments/lamps/green-alt.xml</path>
+  <offsets>
+   <heading-deg>90</heading-deg>
+   <x-m>  -0.237 </x-m>
+   <y-m>  0.0501 </y-m>
+   <z-m>  -0.122 </z-m>
+  </offsets>
+ </model>
+ 
+ <!-- Volume Meters -->
+ <model>
+  <path>Aircraft/Scharmorton/Models/instruments/vol/vol-hot.xml</path>
+  <offsets>
+   <heading-deg>270</heading-deg>
+   <x-m>  -0.266 </x-m>
+   <y-m>  0.053 </y-m>
+   <z-m>  -0.065 </z-m>
+  </offsets>
+ </model>
+ 
+ <model>
+  <path>Aircraft/Scharmorton/Models/instruments/vol/vol-he0.xml</path>
+  <offsets>
+   <heading-deg>270</heading-deg>
+   <x-m>  -0.213 </x-m>
+   <y-m>  0.053 </y-m>
+   <z-m>  -0.065 </z-m>
+  </offsets>
+ </model>
+ 
+ <model>
+  <path>Aircraft/Scharmorton/Models/instruments/vol/vol-he1.xml</path>
+  <offsets>
+   <heading-deg>270</heading-deg>
+   <x-m>  -0.16 </x-m>
+   <y-m>  0.053 </y-m>
+   <z-m>  -0.065 </z-m>
+  </offsets>
+ </model>
+ 
+ <!-- Autopilot logic-->
+ <model>
+  <path>Aircraft/Scharmorton/Models/instruments/lamps/blue-logic-5.xml</path>
+  <offsets>
+   <heading-deg>90</heading-deg>
+   <x-m>  -0.285 </x-m>
+   <y-m>  0.0421 </y-m>
+   <z-m>  0.190 </z-m>
+  </offsets>
+ </model>
+ 
+ <model>
+  <path>Aircraft/Scharmorton/Models/instruments/lamps/green-logic-4.xml</path>
+  <offsets>
+   <heading-deg>90</heading-deg>
+   <x-m>  -0.285 </x-m>
+   <y-m>  0.0421 </y-m>
+   <z-m>  0.179 </z-m>
+  </offsets>
+ </model>
+ 
+ <model>
+  <path>Aircraft/Scharmorton/Models/instruments/lamps/green-logic-3.xml</path>
+  <offsets>
+   <heading-deg>90</heading-deg>
+   <x-m>  -0.285 </x-m>
+   <y-m>  0.0421 </y-m>
+   <z-m>  0.168 </z-m>
+  </offsets>
+ </model>
+ 
+ <model>
+  <path>Aircraft/Scharmorton/Models/instruments/lamps/green-logic-2.xml</path>
+  <offsets>
+   <heading-deg>90</heading-deg>
+   <x-m>  -0.285 </x-m>
+   <y-m>  0.0421 </y-m>
+   <z-m>  0.157 </z-m>
+  </offsets>
+ </model>
+ 
+ <model>
+  <path>Aircraft/Scharmorton/Models/instruments/lamps/green-logic-1.xml</path>
+  <offsets>
+   <heading-deg>90</heading-deg>
+   <x-m>  -0.285 </x-m>
+   <y-m>  0.0421 </y-m>
+   <z-m>  0.146 </z-m>
+  </offsets>
+ </model>
+ 
+ <model>
+  <path>Aircraft/Scharmorton/Models/instruments/lamps/green-logic0.xml</path>
+  <offsets>
+   <heading-deg>90</heading-deg>
+   <x-m>  -0.285 </x-m>
+   <y-m>  0.0421 </y-m>
+   <z-m>  0.135 </z-m>
+  </offsets>
+ </model>
+ 
+ <model>
+  <path>Aircraft/Scharmorton/Models/instruments/lamps/green-logic1.xml</path>
+  <offsets>
+   <heading-deg>90</heading-deg>
+   <x-m>  -0.285 </x-m>
+   <y-m>  0.0421 </y-m>
+   <z-m>  0.124 </z-m>
+  </offsets>
+ </model>
+ 
+ <model>
+  <path>Aircraft/Scharmorton/Models/instruments/lamps/green-logic2.xml</path>
+  <offsets>
+   <heading-deg>90</heading-deg>
+   <x-m>  -0.285 </x-m>
+   <y-m>  0.0421 </y-m>
+   <z-m>  0.113 </z-m>
+  </offsets>
+ </model>
+ 
+ <model>
+  <path>Aircraft/Scharmorton/Models/instruments/lamps/green-logic3.xml</path>
+  <offsets>
+   <heading-deg>90</heading-deg>
+   <x-m>  -0.285 </x-m>
+   <y-m>  0.0421 </y-m>
+   <z-m>  0.102 </z-m>
+  </offsets>
+ </model>
+ 
+ <model>
+  <path>Aircraft/Scharmorton/Models/instruments/lamps/green-logic4.xml</path>
+  <offsets>
+   <heading-deg>90</heading-deg>
+   <x-m>  -0.285 </x-m>
+   <y-m>  0.0421 </y-m>
+   <z-m>  0.091 </z-m>
+  </offsets>
+ </model>
+ 
+ <model>
+  <path>Aircraft/Scharmorton/Models/instruments/lamps/blue-logic5.xml</path>
+  <offsets>
+   <heading-deg>90</heading-deg>
+   <x-m>  -0.285 </x-m>
+   <y-m>  0.0421 </y-m>
+   <z-m>  0.080 </z-m>
+  </offsets>
+ </model>
+ 
+ <!-- Cell-Temp -->
+
+ <model>
+  <name>tnv-15-2</name>
+  <path>Aircraft/Scharmorton/Models/instruments/tnv-15/tnv-15-cell.xml</path>
+  <offsets>
+   <heading-deg>90</heading-deg>
+   <x-m>  -0.195 </x-m>
+   <y-m>  0.053 </y-m>
+   <z-m>  -0.15 </z-m>
+  </offsets>
+ </model>
+ 
+ <model>
+ <path>Aircraft/Scharmorton/Models/instruments/lamps/green-temp-cell.xml</path>
+  <offsets>
+   <heading-deg>90</heading-deg>
+   <x-m>  -0.176 </x-m>
+   <y-m>  0.045 </y-m>
+   <z-m>  -0.112 </z-m>
+  </offsets>
+ </model>
+ 
+ <model>
+ <path>Aircraft/Scharmorton/Models/instruments/lamps/orange-temp-cell.xml</path>
+  <offsets>
+   <heading-deg>90</heading-deg>
+   <x-m>  -0.195 </x-m>
+   <y-m>  0.045 </y-m>
+   <z-m>  -0.112 </z-m>
+  </offsets>
+ </model>
+ 
+ <model>
+ <path>Aircraft/Scharmorton/Models/instruments/lamps/red-temp-cell.xml</path>
+  <offsets>
+   <heading-deg>90</heading-deg>
+   <x-m>  -0.216 </x-m>
+   <y-m>  0.045 </y-m>
+   <z-m>  -0.112 </z-m>
+  </offsets>
+ </model>
+ 
+
+</PropertyList>

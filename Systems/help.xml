@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+<!--
+  Scharmorton model for FlightGear  
+  Copyright (C) Herbert Wagner 2016
+  This file is licensed under the GPL license
+-->
+<PropertyList>
+
+ <!-- Specific keys -->
+ <title>Scharmorton Roziere Ballon by HerbyW 2016 Version 3.1</title>
+ <key>
+  <name>q</name>
+  <desc>Step 1: Initialize everything, wait till all ballonets have the same value</desc>
+ </key>
+ <key>
+  <name>W</name>
+  <desc>Step 4: Filling Helium to -3% for take off</desc>
+ </key>
+ <key>
+  <name>D</name>
+  <desc>Blower On, use after declining to fill in the air-cell to maximal value</desc>
+ </key> 
+ <key>
+  <name>d</name>
+  <desc>Blower Out</desc>
+ </key> 
+ <key>
+  <name>G</name>
+  <desc>Helium out</desc>
+ </key>
+ <key>
+  <name>g</name>
+  <desc>Helium in</desc>
+ </key> 
+ <key>
+  <name>w</name>
+  <desc>Show current on-ground weight.</desc>
+ </key>
+ <key>
+  <name>F</name>
+  <desc>Open Parachute valve.</desc>
+ </key>
+ <key>
+  <name>f</name>
+  <desc>Close Parachute valve.</desc>
+ </key>
+ <key>
+  <name>R</name>
+  <desc>Rip envelope.</desc>
+ </key>
+ <key>
+  <name>E</name>
+  <desc>Anchor</desc>
+ </key>
+ <key>
+  <name>e</name>
+  <desc>Turn Valve left</desc>
+ </key>
+ <key>
+  <name>r</name>
+  <desc>Turn Valve right</desc>
+ </key>
+ <key>
+  <name>y</name>
+  <desc>Change Model View and Panel View</desc>
+ </key>
+ <!-- Handling instructions. -->
+ <text>
+Panel Manual Scharmorton by HerbyW
+ 
+Preparing for Take-off
+ 
+Open HUD "h", you see a lot of values.
+Make the wind settings or metar data activ (see details below).
+Press 1. Temp or "q": we get now all temperatures to the outside temperatur and get the ballon fixed on ground.
+Now press 2. HotAir, blows the air-cell with hot air to some level. Wait!
+This is a hot-fill and the cell temerature will go to 60-65 deg.
+Now press 3. Heli, fills the helium ballonets to some level. Wait!
+(The HUD shows you the filling values, also the 3 volume-meters)
+Wait for both ballonets to get filled, if you mess it up you will get strange weight issues. 
+Wait till the ballon is filled and in a standing position!
+Press 4.TakeOff or "W" to set the helium cells to start conditions.
+
+Take off
+
+Start the burner with the switches on the panel, be aware that the burner-system has 4500 horse powers!
+After a few seconds the ballon will start to lift 2-5 m, the fixed holding lines will be still activ.
+Shut down the burner if the ballon starts to rise up!
+
+No ballast dropping! It is the fuel for your burner :)
+No need for the payload menue! All values are calculated now.
+Now you may loose the fixed lines and start your flight. (Pressing "E").
+
+In flight
+
+Helium buoyancy mass ("g" more Helium in, "G" Helium out) OR fire on or out will get you to the desired height.
+Descending: Helium in little steps out "G", maybe use Parachute-valve ("F" on "f" out), watch Volume-Meters!
+Use the blower "D" on, "d" out, to fill the air-cell after descending, and make the burner more effectiv.
+Your flight direction is the white arrow in the compass,
+adjust the airplane symbol by using the turn-valves "e" left, "r" right
+or the Autopilot switch on the right bottom "Orientation Drift Controller".
+Parachute Controller and Descending Controller you may set activ to controll
+the maximum vertical speed of 3 m/s (more will get you into unstable flight).
+ 
+Befor Landing
+Try to get a declinging rate of not more than -0.3 m/s.
+Set anchor "E", it will get you down if in contact with the ground and hold you at your landing position.
+
+Ater touch down
+
+Open the Rip-valve "R", watch animation. You flight is finished now. You may make a new flight, just start from the top again.
+
+Or you take off again without opening the rip-valve. Air and Helium and Temeratur is key for getting up again.
+ 
+Maximal altitude 12200 m (ca 40000 ft)
+Maximal speed with jet-streams: +300 km/h
+ 
+Tip's and tricks
+Sometimes the ballon start with a vertical speed of 30 m/s, if it happens just wait till it comes down
+and start normal, or use a different starting position.
+
+Change windspeed to change speed of the balloon:
+
+Weather Conditions: Fair weather -- detailed weather -- advanced settings
+Advanced weather Configuration: realistic weather, no terrain presampling!, Wind settings - Wind model: aloft interpol -- Wind Configuration
+
+300/3  20/45  90/80  150/115  210/150  270/175  290/250  270/250 260/250
+
+This setting illuminates a heavy jetsream to the east, so that everyone can make the same flight conditions
+and a lot of differnt tasks may be done! FL00 is sea-level! Have fun! 
+
+Most information is from Cameron Ballons (UK), for more vist the webpage and get the manual for Hot-Air-Balloning!
+This version for Flightgear is handling most of it to get you the most realistic fun out of it.
+Copyright by Herbert Wagner 09-2016.
+
+EXTRA FEATURE
+without helium you may use it as normal hot air ballon! (Do not use then any helium depending actions like altitude controller)
+</text>
+</PropertyList>
