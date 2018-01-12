@@ -1,11 +1,9 @@
-# Scharmorton
-for Flightgear Flightsimulator by Herbert Wagner 2016-2018
+# Scharmorton Rozeire Balloon
 
-https://github.com/HerbyW?tab=repositories
+for FlightGear Flightsimulator by Herbert Wagner 2016-2018
 
 Roziere Ballon with 2 Helium and 1 Hot Air Balloonets, Autopilot, full instrumentation
 
-Instalation: Unzip and copy into the aircraft folder.
 
  This program is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
@@ -20,3 +18,10 @@ Instalation: Unzip and copy into the aircraft folder.
  You should have received a copy of the GNU General Public License
  along with this program; if not, write to the Free Software
  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+ 
+ 
+LICENSE: This aircraft is released under the GNU GPL v2 License, see COPYING file.
+
+Installation: Unzip and copy into the aircraft folder.
+
+See aircraft help for detailed instructions.
